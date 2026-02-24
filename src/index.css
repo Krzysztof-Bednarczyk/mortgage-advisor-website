@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-brand-dark bg-white font-sans antialiased;
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-white/90 backdrop-blur-md shadow-xl border border-white/50 rounded-lg;
+  }
+  .bg-gradient-brand {
+    @apply bg-gradient-to-br from-[#fbf5e9] via-[#faebd7] to-[#e8cbb7];
+  }
+}
